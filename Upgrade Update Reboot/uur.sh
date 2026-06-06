@@ -205,7 +205,7 @@ send_discord_embed "✅ Update Successful" "$DESCRIPTION" 65280
 if [ "$REBOOT_REQUIRED" = true ]; then
     log "[INFO] Changes detected. Rebooting system..."
 
-    DESCRIPTION="Reboot triggered due to updates."
+    DESCRIPTION="Reboot triggered due to updates. "
 
     if [ -n "$UPGRADE_LIST" ]; then
         DESCRIPTION+="Packages:\`\`\`$UPGRADE_LIST\`\`\`
